@@ -21,7 +21,6 @@ void insertVertex(graphType* g, int v) {
 	g->n++; // 그래프 정점의 개수 n을 하나 증가
 }
 
-// 그래프 g에 간선 (u, v)를 삽입하는 연산
 void insertEdge(graphType* g, int u, int v) {
 	// 간선 (u, v)를 삽입하기 위해 정점 u와 v가 그래프에 존재하는지 확인
 	if (u >= g->n || v >= g->n) {
