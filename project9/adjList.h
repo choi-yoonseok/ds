@@ -1,15 +1,18 @@
-#include <stdlib.h>
 #pragma once
+#include <stdlib.h>
 #define MAX_VERTEX 30
+#define TRUE 1  
+#define FALSE 0
 
 typedef struct graphNode {
-	int vertex;
-	struct graphNode* link;
+    int vertex;
+    struct graphNode* link;
 } graphNode;
 
 typedef struct graphType {
-	int n;
-	graphNode* adjList_H[MAX_VERTEX];
+    int n;
+    graphNode* adjList_H[MAX_VERTEX];
+    int visited[MAX_VERTEX]; 
 } graphType;
 
 void createGraph(graphType* g);
